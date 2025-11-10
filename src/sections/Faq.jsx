@@ -34,7 +34,7 @@ const Faq = () => {
                     {faq.slice(0, halfLength).map((item, index) => (
                         <FaqItem
                           key={item.id}
-                          faq={item}
+                          item={item}
                           index={index}
                         />
                     ))}
@@ -43,7 +43,7 @@ const Faq = () => {
                     {faq.slice(halfLength).map((item, index) => (
                         <FaqItem
                           key={item.id}
-                          faq={item}
+                          item={item}
                           index={halfLength + index}
                         />
                     ))}
